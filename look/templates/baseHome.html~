@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        {% if title %}         
+            <title> {{ title }} </title> 
+        {% else %} 
+            <title> Sharp-Writers </title> 
+        {% endif %}
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <link rel="icon" 
+          type="image/png" 
+           href="static/img/paypal.png">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/fonta/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/bootstrap/css/bootstrap.min.css">
+
+        
+        
+        <script src=“js/jquery.js" type="text/javascript"></script>
+        <script src="javascripts/jquery.js" type="text/javascript"></script>
+        
+                
+    </head>
+    <body>
+    
+    
+    
+  
+    
+           
+        <div id = "wrapper">
+        
+       
+       
+       
+        <!--  header -->
+        
+        <div id = "header">
+         
+         
+{% if user.is_authenticated %}
+    <i class="icon-user"> </i> Hello {{user}} <a>Log Out</a>
+{% else %}
+    <i class="icon-lock"> </i>  <a href="/login">Log In</a>
+{% endif %}      
+        
+        
+   
+         
+        </div>
+        <!-- end of header div -->
+        <br>
+ 
+        
+        
+        
+        
+        <!--  navigation -->
+        
+        
+        
+        
+        <div id='cssmenu'>
+<ul>
+   <li class='active'><a href='index.html'><span>Home</span></a></li>
+   <li><a href='#'><span>Request Paper</span></a></li>
+   <li><a href='#'><span>Contacts</span></a></li>
+   <li><a href='#'><span>Payment Method</span></a></li>
+   <li class='last'><a href='#'><span>FAQ</span></a></li>
+</ul>
+</div>
+     
+        <!-- end of nav div -->
+        
+        
+
+
+    <!--  div #1 -->
+    <div id = "basic"> 
+
+
+{% block content %}
+
+
+{% endblock %}
+        
+
+    </div>
+    <!-- end of one div -->
+        
+                 
+        
+    </div> <!-- end of body wrapper -->
+    
+    
+    <!--  div -- FOOTER WRAPPER-->
+
+    <div id = "footer_wrapper">    
+        <div id = "footer">
+         
+         <div id = "top_footer">  
+         
+         
+         
+         <div class = "top_5">
+         
+
+<ul>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>About Us</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>How It Works</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>FAQ</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Terms of Service</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Privacy Policy</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Money-Back Guarantee</a></li>
+   
+</ul>
+
+         
+         
+         </div>
+         
+         <div class = "top_5">
+         
+<ul>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Contact Us</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Testimonials</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Confidentiality</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Affiliate Program</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Be a writer</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Topics</a></li>
+   
+</ul>
+         
+         </div>
+         
+         <div class = "top_5">
+         
+<ul>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Essay Help</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Research Paper</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Thesis Help</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Our Team</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Paper Writing Help</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Sample Papers</a></li>
+   
+</ul>
+         
+         </div>
+         
+         <div class = "top_5">
+         
+<ul>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Personal Satement</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Dissertation Help</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Samples</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Resources</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>Our Blog</a></li>
+   <li> <i class="fa fa-shield fa-rotate-270"></i> <a href='#'>One Hour Essay</a></li>
+   
+</ul>
+         
+         </div>
+         
+         <div id = "image_col", class = "top_5">
+         
+            <img src= "static/img/paypal.png"></img>
+         
+         </div>
+         
+         </div>
+         <br> 
+         <div id = "footer">
+         
+         <div id = "bottom_footer">  
+         
+         <p id= "links">
+         Term papers for sale | Do my Essay Cheap | Essay Term Paper | 1000 Word Essay | How to Write a Good Essay | Problem solution essay | Personal essay Essay writing help | Essay writing | Free essay | Personal essay | Essay topics | Research paper topics | Buy essay | College papers | Free essay writing | Custom term papers | Buy research paper | Essays online | Free essay online | Research paper example
+         
+         </p>
+         
+         <p id = "copyright">
+         
+         <strong> &copy; 2014, www.sharp-writers.com </strong>
+         
+         </p>
+         
+         </div>
+         
+         
+                     
+        </div>
+    </div>
+    <!-- end of footer WRAPPER div -->
+        
+    
+    
+    
+    </body>
+</html>
+
